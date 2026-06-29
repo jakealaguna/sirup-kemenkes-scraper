@@ -1,20 +1,16 @@
 # SiRUP Kementerian Kesehatan Scraper
 
-Python automation untuk mengambil seluruh data paket pengadaan **Kementerian Kesehatan** dari website **SiRUP INAPROC** secara otomatis dan menyimpannya ke dalam format Microsoft Excel.
-
----
+Python-based automation tool for collecting public procurement package data from the SiRUP INAPROC website and exporting the results to Microsoft Excel.
 
 ## Features
 
-- Mengambil seluruh halaman secara otomatis
-- Mendukung 100 data per halaman
-- Menyimpan hasil ke Excel (.xlsx)
-- Menggunakan Selenium WebDriver
-- Mudah dijalankan di komputer lain
+- Automated extraction of procurement package data
+- Supports pagination (100 records per page)
+- Exports data to Excel (.xlsx)
+- Built with Selenium WebDriver
+- Easy to run on different computers
 
----
-
-## Technology
+## Technologies
 
 - Python
 - Selenium
@@ -22,63 +18,51 @@ Python automation untuk mengambil seluruh data paket pengadaan **Kementerian Kes
 - OpenPyXL
 - WebDriver Manager
 
----
-
 ## Installation
 
-Clone repository
+Clone this repository:
 
 ```bash
-git clone https://github.com/USERNAME/sirup-kemenkes-scraper.git
+git clone https://github.com/jakealaguna/sirup-kemenkes-scraper.git
 ```
 
-Masuk ke folder
+Move into the project directory:
 
 ```bash
 cd sirup-kemenkes-scraper
 ```
 
-Install library
+Install dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
----
-
 ## Usage
 
-Jalankan program
+Run the scraper:
 
 ```bash
 python ambil_kemenkes.py
 ```
 
-Kemudian:
+Then:
 
-1. Pilih Tahun Anggaran
-2. Pilih Kementerian Kesehatan
-3. Klik Cari
-4. Pilih 100 data per halaman
-5. Tekan ENTER di PowerShell
+1. Select the fiscal year.
+2. Select **Kementerian Kesehatan**.
+3. Click **Cari**.
+4. Set the table to display **100 rows per page**.
+5. Press **ENTER** in PowerShell.
 
-Program akan mengambil seluruh data secara otomatis.
+The program will automatically scrape all available pages and save the result as:
 
----
-
-## Output
-
-```
+```text
 kemenkes_2026.xlsx
 ```
 
----
-
 ## Disclaimer
 
-Repository ini dibuat untuk tujuan pembelajaran dan otomatisasi pengambilan data yang tersedia secara publik. Penggunaan tetap harus mematuhi ketentuan layanan dari website sumber.
-
----
+This project is intended for educational purposes and automation of publicly available data. Users are responsible for ensuring compliance with the terms of use of the source website.
 
 ## License
 
